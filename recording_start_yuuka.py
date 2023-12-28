@@ -11,6 +11,7 @@ def recording():
     def yuuka_recording():
         #録画
         ydl_opts = {
+            'outtmpl': '/Volumes/SSD1000/Adobe素材/ニアジョイ切り抜き/録画倉庫/%(title)s.%(ext)s',
         }
         with YoutubeDL(ydl_opts) as ydl:
             ydl.download(['https://www.showroom-live.com/r/JOY_YUUKA_MURAYAMA'])
